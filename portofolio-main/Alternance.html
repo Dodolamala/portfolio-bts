@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>alternance - Dorian LACHASSE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Stages — Portfolio BTS SIO SISR">
+</head>
+<body>
+  <div class="wrapper">
+
+<aside class="sidebar">
+  <div class="brand">
+    <span>LACHASSE</span>
+    <span class="sub">Dorian</span>
+    <small>Étudiant BTS SIO</small>
+  </div>
+  <nav class="nav"><a class="" href="index.html"><span class="icon">🏠</span><span>Profil</span></a><a class="" href="bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a><a class="" href="parcours.html"><span class="icon">🎓</span><span>Parcours</span></a><a class="" href="stages.html"><span class="icon">🧳</span><span>Alternance</span></a><a class="" href="realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a><a class="" href="epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a><a class="" href="veille.html"><span class="icon">👁️</span><span>Veille</span></a><a class="" href="certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a><a class="" href="contact.html"><span class="icon">✉️</span><span>Contact</span></a></nav>
+  <footer>© 2026 Dorian LACHASSE</footer>
+</aside>
+
+    <main>
+      <div class="container">
+
+<h1>Mon Alternance </h1>
+<div class="section-head"><span class="bar"></span></div>
+<p class="lead">Voici l'ensemble de mes missions réalisés au cours de mon alternance, répartis entre la première et la deuxième année du BTS.</p>
+<div class="card" style="display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:center;margin-top:16px">
+  <div>
+    <h3>Cognaq-jay Image</h3>
+    <div class="lead">1995 — A nos jours</div>
+    <ul>
+      <li>Cognacq-Jay Image est une entreprise française spécialisée dans la diffusion, la post-production et les services techniques pour la télévision et les médias numériques. Elle accompagne les chaînes, plateformes et producteurs dans la gestion et la valorisation de leurs contenus audiovisuels.</li>
+    </ul>
+    <a class="btn" href="#">En savoir plus</a>
+  </div>
+  <img src="" alt="">
+</div>
+<div class="card" style="display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:center;margin-top:16px">
+  <div>
+    <h3>Mes missions</h3>
+    <div class="lead">2024 - 2026</div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="chips"><a class="btn outline" href="">Site de l'organisation</a></div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=900&auto=format&fit=crop" alt="Datacenter">
+</div>
+      </div>
+    </main>
+  </div>
+
+<script>
+(function(){
+  var current = window.location.pathname.split('/').pop();
+  if (!current) current = 'index.html';
+  // retire query/hash
+  current = current.split('?')[0].split('#')[0];
+  var links = document.querySelectorAll('.nav a');
+  links.forEach(function(a){
+    a.classList.remove('active');
+    var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+    // compare uniquement le nom de fichier
+    var file = href.split('/').pop();
+    if (file === current) a.classList.add('active');
+  });
+})();
+</script>
+</body>
+</html>

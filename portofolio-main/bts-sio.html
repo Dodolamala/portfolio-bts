@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTS SIO — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="BTS SIO — Portfolio BTS SIO SISR">
+</head>
+<body>
+  <div class="wrapper">
+
+<aside class="sidebar">
+  <div class="brand">
+    <span>LACHASSE</span>
+    <span class="sub">Dorian</span>
+    <small>Étudiant BTS SIO</small>
+  </div>
+  <nav class="nav"><a class="" href="index.html"><span class="icon">🏠</span><span>Profil</span></a><a class="" href="bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a><a class="" href="parcours.html"><span class="icon">🎓</span><span>Parcours</span></a><a class="" href="stages.html"><span class="icon">🧳</span><span>Alternance</span></a><a class="" href="realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a><a class="" href="epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a><a class="" href="veille.html"><span class="icon">👁️</span><span>Veille</span></a><a class="" href="certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a><a class="" href="contact.html"><span class="icon">✉️</span><span>Contact</span></a></nav>
+  <footer>© 2026 Dorian LACHASSE</footer>
+</aside>
+
+    <main>
+      <div class="container">
+
+<h1>BTS SIO</h1>
+<div class="section-head"><span class="bar"></span><span></span></div>
+<div class="grid cols-2">
+  <div class="card">
+    <p>Le BTS Services Informatiques aux Organisations est une formation en deux ans qui prépare aux métiers de l'informatique. Il propose deux spécialités distinctes, adaptées aux différents profils et aspirations professionnelles.</p>
+    <h3>Objectifs du BTS</h3>
+    <ul>
+      <li>Former des techniciens capables de gérer un parc informatique ou développer des applications</li>
+      <li>Apporter des compétences techniques solides et une culture générale en informatique</li>
+      <li>Permettre une insertion professionnelle rapide ou une poursuite d'études</li>
+    </ul>
+  </div>
+ <div class="card" style="background:linear-gradient(90deg,#2563eb,#3b82f6);color:#fff">
+  <h3>Débouchés professionnels (BTS SIO SISR)</h3>
+
+  <div class="chips" style="margin-top:8px">
+    <span class="chip">Technicien systèmes et réseaux</span>
+    <span class="chip">Administrateur systèmes junior</span>
+    <span class="chip">Technicien support N2</span>
+    <span class="chip">Technicien d’exploitation</span>
+    <span class="chip">Technicien infrastructure</span>
+    <span class="chip">Technicien réseaux</span>
+    <span class="chip">Administrateur Windows / Linux junior</span>
+    <span class="chip">Technicien cybersécurité (junior)</span>
+    <span class="chip">Opérateur supervision / monitoring</span>
+  </div>
+</div>
+<div class="card" style="background:linear-gradient(90deg,#16a34a,#22c55e);color:#fff">
+  <h3>Poursuites d’études possibles</h3>
+
+  <p style="opacity:.9;margin-bottom:10px">
+    Après le BTS SIO option SISR, plusieurs poursuites d’études permettent
+    de se spécialiser ou de monter en compétences.
+  </p>
+
+  <div class="chips">
+    <span class="chip">Licence professionnelle Réseaux & Télécoms</span>
+    <span class="chip">Licence pro Administration Systèmes et Réseaux</span>
+    <span class="chip">Licence pro Cybersécurité</span>
+    <span class="chip">Bachelor Administrateur Systèmes</span>
+    <span class="chip">Bachelor Cybersécurité</span>
+    <span class="chip">Bachelor DevOps</span>
+    <span class="chip">École d’ingénieur (admissions parallèles)</span>
+    <span class="chip">BUT Informatique (année passerelle)</span>
+  </div>
+</div>
+
+</div>
+<div class="grid cols-2" style="margin-top:18px">
+  <div class="card">
+    <h3>SISR <small style="color:var(--muted)">— Option suivie</small></h3>
+    <ul>
+      <li>Réseaux et infrastructures</li><li>Cybersécurité</li><li>Administration systèmes</li><li>Virtualisation</li>
+    </ul>
+    <p class="lead">SISR forme aux métiers liés à la conception et la maintenance d'infrastructures réseaux, avec un focus important sur la cybersécurité.</p>
+  </div>
+  <div class="card">
+    <h3>SLAM <small style="color:var(--muted)">— Option alternative</small></h3>
+    <ul><li>Développement</li><li>Bases de données</li><li>Applications métiers</li><li>Solutions de gestion</li></ul>
+    <p class="lead">SLAM prépare aux métiers du développement d'applications, avec des compétences en programmation et bases de données.</p>
+  </div>
+</div>
+
+      </div>
+    </main>
+  </div>
+
+<script>
+(function(){
+  var current = window.location.pathname.split('/').pop();
+  if (!current) current = 'index.html';
+  // retire query/hash
+  current = current.split('?')[0].split('#')[0];
+  var links = document.querySelectorAll('.nav a');
+  links.forEach(function(a){
+    a.classList.remove('active');
+    var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+    // compare uniquement le nom de fichier
+    var file = href.split('/').pop();
+    if (file === current) a.classList.add('active');
+  });
+})();
+</script>
+</body>
+</html>

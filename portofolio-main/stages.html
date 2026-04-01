@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alternance — Dorian LACHASSE</title>
+  <meta name="description" content="Alternance — Portfolio BTS SIO SISR">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<div class="wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span>LACHASSE</span>
+      <span class="sub">Dorian</span>
+      <small>Étudiant BTS SIO</small>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html"><span class="icon">🏠</span><span>Profil</span></a>
+      <a href="bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+      <a href="parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+      <a class="active" href="stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+      <a href="realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+      <a href="epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+      <a href="veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+      <a href="certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+      <a href="contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+    </nav>
+
+    <footer>© 2026 Dorian LACHASSE</footer>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+
+      <h1>Mon Alternance</h1>
+      <div class="section-head"><span class="bar"></span></div>
+
+      <p class="lead">
+        Cette page présente l’ensemble des missions que j’ai réalisées au cours de mon alternance,
+        réparties sur les deux années du BTS SIO option SISR.
+      </p>
+
+      <!-- ENTREPRISE -->
+      <div class="card grid cols-2 align-center section-gap">
+        <div>
+          <h2 class="card-title">Cognacq-Jay Image</h2>
+          <p class="lead">1995 — aujourd’hui</p>
+
+          <p>
+            Cognacq-Jay Image est une entreprise française spécialisée dans la diffusion,
+            la post-production et les services techniques pour la télévision et les médias numériques.
+            Elle accompagne les chaînes, plateformes et producteurs dans la gestion et la valorisation
+            de leurs contenus audiovisuels.
+          </p>
+<a class="btn"
+   href="https://www.cognacqjayimage.com/fr/"
+   target="_blank"
+   rel="noopener noreferrer">
+  Site de l’entreprise
+</a>
+
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop"
+          alt="Entreprise audiovisuelle"
+          style="border-radius:14px"
+        />
+      </div>
+
+      <!-- MISSIONS -->
+      <div class="card grid cols-2 align-center section-gap">
+        <div>
+          <h2 class="card-title">Mes missions</h2>
+          <p class="lead">2024 — 2026</p>
+
+          <ul class="list">
+            <li>Support utilisateur et gestion des incidents via <b>JIRA</b></li>
+            <li>Gestion du parc informatique et de l’inventaire via <b>GLPI</b></li>
+            <li>Préparation et configuration de postes <b>Windows / Linux</b></li>
+            <li>Création et mise à jour de procédures techniques (TTP) sur <b>Confluence</b></li>
+            <li>Réalisation de schémas d’infrastructure avec <b>Microsoft Visio</b></li>
+            <li>Déploiement d’un serveur de stockage au datacenter (<b>QNAP</b>)</li>
+            <li>Sécurisation de l’environnement <b>Microsoft 365</b></li>
+            <li>Participation à un audit de conformité <b>NIS2</b></li>
+            <li>Déploiement et exploitation de la solution de scan de vulnérabilités <b>OpenVAS</b></li>
+            <li>Migration et restructuration de la documentation technique</li>
+            <li>Mise à niveau des postes techniques vers <b>Windows 11</b></li>
+          </ul>
+
+          <div class="chips section-gap">
+            <span class="chip">GLPI</span>
+            <span class="chip">JIRA</span>
+            <span class="chip">Confluence</span>
+            <span class="chip">Visio</span>
+            <span class="chip">OpenVAS</span>
+            <span class="chip">Microsoft 365</span>
+            <span class="chip">Windows 11</span>
+            <span class="chip">Linux</span>
+            <span class="chip">QNAP</span>
+          </div>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=900&auto=format&fit=crop"
+          alt="Datacenter"
+          style="border-radius:14px"
+        />
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- SCRIPT MENU ACTIF -->
+<script>
+(function(){
+  var current = window.location.pathname.split('/').pop();
+  if (!current) current = 'index.html';
+  current = current.split('?')[0].split('#')[0];
+
+  document.querySelectorAll('.nav a').forEach(function(a){
+    a.classList.remove('active');
+    var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+    if (href === current) a.classList.add('active');
+  });
+})();
+</script>
+
+</body>
+</html>
