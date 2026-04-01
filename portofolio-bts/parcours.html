@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcours — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Parcours — Portfolio BTS SIO SISR">
+</head>
+<body>
+  <div class="wrapper">
+
+<aside class="sidebar">
+  <div class="brand">
+    <span>LACHASSE</span>
+    <span class="sub">Dorian</span>
+    <small>Étudiant BTS SIO</small>
+  </div>
+  <nav class="nav"><a class="" href="index.html"><span class="icon">🏠</span><span>Profil</span></a><a class="" href="bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a><a class="" href="parcours.html"><span class="icon">🎓</span><span>Parcours</span></a><a class="" href="stages.html"><span class="icon">🧳</span><span>Alternance</span></a><a class="" href="realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a><a class="" href="epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a><a class="" href="veille.html"><span class="icon">👁️</span><span>Veille</span></a><a class="" href="certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a><a class="" href="contact.html"><span class="icon">✉️</span><span>Contact</span></a></nav>
+  <footer>© 2026 Dorian LACHASSE</footer>
+</aside>
+
+    <main>
+      <div class="container">
+
+<h1>Mon Parcours</h1>
+<div class="section-head"><span class="bar"></span></div>
+<div class="card timeline">
+  <div class="tl-item">
+    <h3>Bac STMG – Lycée Albert Schweitzer</h3><div class="lead">2015 – 2018</div>
+    <p>Baccalauréat sciences et technologies du management et de la gestion.</p>
+  </div>
+  <div class="tl-item">
+    <h3>BTS BTS Métiers de l’audiovisuel – EICAR</h3><div class="lead">2020 – 2022</div>
+    <p>Formation prépare aux métiers de la captation sonore, du montage, du mixage, de l’illustration sonore et de la diffusion sonore dans les productions audiovisuelles. .</p>
+  </div>
+  <div class="tl-item">
+    <h3>Bachelor Audiovisuel Son – EICAR</h3><div class="lead">2023</div>
+    <p>Formation qui prépare aux métiers du son dans les domaines du cinéma, de l'audiovisuel, du jeu vidéo et de la musique.</p>
+  </div>
+  <div class="tl-item">
+    <h3> Auto-entrepreneur</h3><div class="lead">2022 - 2024 </div>
+    <p>Création d’une micro-entreprise en parallèle de ma dernière année d’études, spécialisée dans la prise de son et la post-production audiovisuelle.</p>
+  </div>
+  <div class="tl-item">
+    <h3>BTS SIO</h3>EFREI<div class="lead">2024 – 2026</div>
+    <p>En alternance à Cognaq-jay image en tant que technicien informatique.</p>
+  </div>
+</div>
+
+      </div>
+    </main>
+  </div>
+
+<script>
+(function(){
+  var current = window.location.pathname.split('/').pop();
+  if (!current) current = 'index.html';
+  // retire query/hash
+  current = current.split('?')[0].split('#')[0];
+  var links = document.querySelectorAll('.nav a');
+  links.forEach(function(a){
+    a.classList.remove('active');
+    var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+    // compare uniquement le nom de fichier
+    var file = href.split('/').pop();
+    if (file === current) a.classList.add('active');
+  });
+})();
+</script>
+</body>
+</html>
