@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Contact — Portfolio BTS SIO SISR">
+</head>
+<body>
+  <div class="wrapper">
+
+<aside class="sidebar">
+  <div class="brand">
+    <span>LACHASSE</span>
+    <span class="sub">Dorian</span>
+    <small>Étudiant BTS SIO</small>
+  </div>
+  <nav class="nav"><a class="" href="index.html"><span class="icon">🏠</span><span>Profil</span></a><a class="" href="bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a><a class="" href="parcours.html"><span class="icon">🎓</span><span>Parcours</span></a><a class="" href="stages.html"><span class="icon">🧳</span><span>Alternance</span></a><a class="" href="realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a><a class="" href="epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a><a class="" href="veille.html"><span class="icon">👁️</span><span>Veille</span></a><a class="" href="certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a><a class="" href="contact.html"><span class="icon">✉️</span><span>Contact</span></a></nav>
+  <footer>© 2026 Dorian LACHASSE</footer>
+</aside>
+
+    <main>
+      <div class="container">
+
+<h1>Contact</h1>
+<div class="section-head"><span class="bar"></span></div>
+<div class="grid cols-2">
+  <div class="card">
+    <h3>Envoyez‑moi un message</h3>
+    <form action="mailto:contact@omar-elyahiaoui.fr" method="post" enctype="text/plain" style="display:grid;gap:10px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <input placeholder="Nom et prénom" value="Dorian LACHASSE" style="padding:12px;border-radius:12px;border:1px solid #d7dfff;background:#fff"/>
+        <input type="email" placeholder="votre@email.com" style="padding:12px;border-radius:12px;border:1px solid #d7dfff;background:#fff"/>
+      </div>
+      <textarea placeholder="Expliquez‑moi votre besoin..." style="min-height:140px;padding:12px;border-radius:12px;border:1px solid #d7dfff;background:#fff"></textarea>
+      <button class="btn" type="submit">Envoyer le message</button>
+    </form>
+  </div>
+  <div class="card">
+    <h3>Coordonnées</h3>
+    <p><b>Localisation</b><br/>Le raincy, France</p>
+    <p><b>Email</b><br/><a href="/cdn-cgi/l/email-protection#32515d5c46535146725d5f53401f575e4b535a5b535d475b1c5440">contact@dorian-lachassefr</a></p>
+    <p><b>Disponibilité</b><br/>24h/24, 7j/7</p>
+    <p><b>Réseaux sociaux</b><br/><a href="https://linkedin.com/in/">LinkedIn</a></p>
+  </div>
+</div>
+
+      </div>
+    </main>
+  </div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){
+  var current = window.location.pathname.split('/').pop();
+  if (!current) current = 'index.html';
+  // retire query/hash
+  current = current.split('?')[0].split('#')[0];
+  var links = document.querySelectorAll('.nav a');
+  links.forEach(function(a){
+    a.classList.remove('active');
+    var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+    if (href === current) {
+      a.classList.add('active');
+    }
+  });
+})();
