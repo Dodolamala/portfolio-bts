@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventaire du parc avec GLPI — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <meta name="description" content="C1 — Recensement et identification des ressources numériques avec GLPI">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span>LACHASSE</span>
+        <span class="sub">Dorian</span>
+        <small>Étudiant BTS SIO</small>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">🏠</span><span>Profil</span></a>
+        <a href="../bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+        <a href="../parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+        <a href="../stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+        <a href="../realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+        <a href="../epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+        <a href="../veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+        <a href="../certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+        <a href="../contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+      </nav>
+
+      <footer>© 2026 Dorian LACHASSE</footer>
+    </aside>
+
+    <main>
+      <div class="container">
+        <a class="backlink" href="../realisations.html">← Retour aux réalisations</a>
+
+        <h1>Inventaire du parc avec GLPI</h1>
+        <div class="section-head"><span class="bar"></span></div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>C1 — Recensement et identification des ressources numériques</h3>
+          <p class="muted">
+            Mise en place de GLPI afin de centraliser et automatiser l’inventaire
+            des ressources informatiques : ordinateurs, imprimantes, matériels réseau,
+            utilisateurs et groupes.
+          </p>
+        </div>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Contexte</h3>
+            <p class="muted">
+              Dans le cadre de la gestion du parc informatique, il est nécessaire
+              de centraliser les informations concernant les équipements.
+              GLPI est une solution open-source permettant l’inventaire automatique
+              et la gestion des ressources numériques.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Objectif</h3>
+            <p class="muted">
+              L’objectif était de mettre en place une solution capable de recenser
+              automatiquement les ressources numériques et de regrouper les informations
+              du parc dans une interface unique.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Environnement technique</h3>
+
+          <div class="chips">
+            <span class="chip">Ubuntu Server</span>
+            <span class="chip">Apache2</span>
+            <span class="chip">MariaDB</span>
+            <span class="chip">PHP</span>
+            <span class="chip">GLPI</span>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Installation et configuration</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Mise à jour du système</h3>
+            <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
+          </div>
+
+          <div class="card">
+            <h3>Installation des dépendances</h3>
+            <pre><code>sudo apt install apache2 mariadb-server php php-mysql \
+php-xml php-mbstring php-curl php-gd php-intl \
+php-zip php-bz2 php-imap unzip -y</code></pre>
+          </div>
+
+          <div class="card">
+            <h3>Sécurisation MariaDB</h3>
+            <pre><code>sudo mysql_secure_installation</code></pre>
+          </div>
+
+          <div class="card">
+            <h3>Création de la base de données</h3>
+            <pre><code>CREATE DATABASE glpi;
+
+CREATE USER 'glpiuser'@'localhost'
+IDENTIFIED BY 'motdepasse';
+
+GRANT ALL PRIVILEGES ON glpi.* 
+TO 'glpiuser'@'localhost';
+
+FLUSH PRIVILEGES;</code></pre>
+          </div>
+
+          <div class="card">
+            <h3>Téléchargement de GLPI</h3>
+            <pre><code>wget https://github.com/glpi-project/glpi/releases/download/10.0.11/glpi-10.0.11.tgz</code></pre>
+          </div>
+
+          <div class="card">
+            <h3>Extraction et permissions</h3>
+            <pre><code>tar -xvzf glpi-10.0.11.tgz
+
+chown -R www-data:www-data /var/www/html/glpi</code></pre>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Résultat obtenu</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Centralisation du parc</h3>
+            <p class="muted">
+              Après l’installation, GLPI permet d’obtenir une vision globale
+              du parc informatique depuis un tableau de bord centralisé.
+            </p>
+
+            <ul class="bullets">
+              <li>Inventaire automatique des machines</li>
+              <li>Suivi des ordinateurs et imprimantes</li>
+              <li>Gestion des utilisateurs et groupes</li>
+              <li>Centralisation des ressources numériques</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Capture de l’interface GLPI</h3>
+            <img
+              src="../images/GLPI.png"
+              alt="Tableau de bord GLPI"
+              style="width:100%; border-radius:14px; margin-top:10px;"
+            />
+            <p class="muted" style="margin-top:10px">
+              Tableau de bord principal de GLPI après installation et configuration.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Compétences mobilisées</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Recenser et identifier les ressources numériques</li>
+            <li>Installer et configurer un service web sous Linux</li>
+            <li>Configurer une base de données MariaDB</li>
+            <li>Mettre en place un outil de gestion de parc informatique</li>
+            <li>Structurer les informations d’un parc informatique</li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var current = window.location.pathname.split('/').pop();
+      if (!current) current = 'index.html';
+      current = current.split('?')[0].split('#')[0];
+
+      var links = document.querySelectorAll('.nav a');
+      links.forEach(function (a) {
+        a.classList.remove('active');
+        var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+        var file = href.split('/').pop();
+        if (file === current) a.classList.add('active');
+      });
+    })();
+  </script>
+</body>
+</html>

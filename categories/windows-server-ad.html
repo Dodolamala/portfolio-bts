@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Windows Server Active Directory — Dorian LACHASSE</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta name="description" content="Installation et exploitation d’un Windows Server avec Active Directory — Portfolio BTS SIO SISR">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span>LACHASSE</span>
+        <span class="sub">Dorian</span>
+        <small>Étudiant BTS SIO</small>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">🏠</span><span>Profil</span></a>
+        <a href="../bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+        <a href="../parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+        <a href="../stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+        <a href="../realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+        <a href="../epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+        <a href="../veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+        <a href="../certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+        <a href="../contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+      </nav>
+
+      <footer>© 2026 Dorian LACHASSE</footer>
+    </aside>
+
+    <main>
+      <div class="container">
+
+        <a class="backlink" href="../competences/mise-a-disposition-services.php">
+          ← Retour à la mise à disposition de services
+        </a>
+
+        <h1>Installation / exploitation d’un Windows Server avec Active Directory</h1>
+
+        <div class="section-head">
+          <span class="bar"></span>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Contexte</h3>
+
+          <p class="muted">
+            Dans le cadre de la mise à disposition d’un service informatique,
+            j’ai installé et configuré un serveur Windows Server avec le rôle
+            Active Directory Domain Services. L’objectif était de centraliser
+            l’authentification des utilisateurs, la gestion des postes et
+            l’administration des ressources du domaine.
+          </p>
+        </div>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+            <h3>Objectifs</h3>
+
+            <ul class="bullets">
+              <li>Installer un serveur Windows Server</li>
+              <li>Configurer l’adresse IP, le nom du serveur et les paramètres réseau</li>
+              <li>Installer le rôle Active Directory Domain Services</li>
+              <li>Créer un domaine Active Directory</li>
+              <li>Configurer le service DNS associé au domaine</li>
+              <li>Créer et organiser les utilisateurs, groupes et unités d’organisation</li>
+              <li>Intégrer des postes clients au domaine</li>
+              <li>Vérifier le bon fonctionnement de l’authentification centralisée</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Environnement technique</h3>
+
+            <div class="chips">
+              <span class="chip">Windows Server</span>
+              <span class="chip">Active Directory</span>
+              <span class="chip">AD DS</span>
+              <span class="chip">DNS</span>
+              <span class="chip">Domaine</span>
+              <span class="chip">Utilisateurs</span>
+              <span class="chip">Groupes</span>
+              <span class="chip">GPO</span>
+            </div>
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Travaux réalisés</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+            <h3>Installation du serveur</h3>
+
+            <p class="muted">
+              Installation de Windows Server sur une machine physique ou virtuelle,
+              configuration initiale du système, renommage du serveur et définition
+              d’une adresse IP fixe afin de garantir la stabilité du service.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Installation du rôle AD DS</h3>
+
+            <p class="muted">
+              Ajout du rôle Active Directory Domain Services depuis le gestionnaire
+              de serveur, puis promotion du serveur en contrôleur de domaine.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Création du domaine</h3>
+
+            <p class="muted">
+              Création d’un nouveau domaine Active Directory permettant de centraliser
+              la gestion des comptes utilisateurs, des groupes, des ordinateurs et
+              des stratégies de sécurité.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Configuration DNS</h3>
+
+            <p class="muted">
+              Mise en place du service DNS lié à Active Directory afin de permettre
+              la résolution des noms internes et le bon fonctionnement des services
+              du domaine.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Gestion des comptes</h3>
+
+            <p class="muted">
+              Création d’utilisateurs, de groupes et d’unités d’organisation afin
+              de structurer l’annuaire selon les besoins de l’organisation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Intégration des postes clients</h3>
+
+            <p class="muted">
+              Ajout de postes Windows au domaine Active Directory, puis test de
+              connexion avec des comptes utilisateurs du domaine.
+            </p>
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Fonctionnalités mises en place</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Installation et configuration d’un Windows Server</li>
+            <li>Promotion du serveur en contrôleur de domaine</li>
+            <li>Création d’un domaine Active Directory</li>
+            <li>Configuration du service DNS</li>
+            <li>Création d’utilisateurs et de groupes</li>
+            <li>Organisation de l’annuaire avec des unités d’organisation</li>
+            <li>Jonction de postes clients au domaine</li>
+            <li>Authentification centralisée des utilisateurs</li>
+            <li>Préparation à la mise en place de stratégies de groupe</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Résultats obtenus</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+            <h3>Service opérationnel</h3>
+
+            <ul class="bullets">
+              <li>Serveur Windows installé et configuré</li>
+              <li>Contrôleur de domaine fonctionnel</li>
+              <li>Domaine Active Directory créé</li>
+              <li>Service DNS opérationnel</li>
+              <li>Utilisateurs et groupes créés</li>
+              <li>Postes clients intégrés au domaine</li>
+              <li>Authentification des utilisateurs validée</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Impact</h3>
+
+            <p class="muted">
+              La mise en place d’Active Directory permet de centraliser
+              l’administration du système d’information. Elle facilite la gestion
+              des utilisateurs, des droits d’accès, des postes clients et améliore
+              la sécurité globale de l’infrastructure.
+            </p>
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Compétences mobilisées</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Mise à disposition d’un service informatique</li>
+            <li>Administration d’un serveur Windows</li>
+            <li>Gestion d’un annuaire Active Directory</li>
+            <li>Configuration réseau et DNS</li>
+            <li>Gestion des utilisateurs, groupes et ordinateurs</li>
+            <li>Sécurisation des accès au système d’information</li>
+            <li>Tests et validation d’un service d’infrastructure</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Bilan personnel</h2>
+
+        <div class="card" style="margin-top:14px">
+          <p class="muted">
+            Cette réalisation m’a permis de mieux comprendre le fonctionnement
+            d’un annuaire Active Directory et son importance dans une infrastructure
+            professionnelle. J’ai appris à installer un contrôleur de domaine,
+            à gérer les utilisateurs et à intégrer des postes clients dans un
+            environnement centralisé.
+          </p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+
+      var current = window.location.pathname.split('/').pop();
+
+      if (!current) {
+        current = 'index.php';
+      }
+
+      current = current.split('?')[0].split('#')[0];
+
+      var links = document.querySelectorAll('.nav a');
+
+      links.forEach(function (a) {
+
+        a.classList.remove('active');
+
+        var href = (a.getAttribute('href') || '')
+          .split('?')[0]
+          .split('#')[0];
+
+        var file = href.split('/').pop();
+
+        if (file === current) {
+          a.classList.add('active');
+        }
+
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

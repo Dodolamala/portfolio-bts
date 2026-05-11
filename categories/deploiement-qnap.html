@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Déploiement d’un serveur QNAP — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <meta name="description" content="Déploiement d’un serveur QNAP — Portfolio BTS SIO SISR">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <span>LACHASSE</span>
+        <span class="sub">Dorian</span>
+        <small>Étudiant BTS SIO</small>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">🏠</span><span>Profil</span></a>
+        <a href="../bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+        <a href="../parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+        <a href="../stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+        <a href="../realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+        <a href="../epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+        <a href="../veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+        <a href="../certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+        <a href="../contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+      </nav>
+
+      <footer>© 2026 Dorian LACHASSE</footer>
+
+    </aside>
+
+    <main>
+
+      <div class="container">
+
+        <a class="backlink" href="../competences/mode-projet.html">
+          ← Retour au mode projet
+        </a>
+
+        <h1>Déploiement d’un serveur QNAP</h1>
+
+        <div class="section-head">
+          <span class="bar"></span>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+
+          <h3>Contexte</h3>
+
+          <p class="muted">
+            Dans le cadre d’un besoin d’augmentation de capacité de stockage
+            sur une plateforme de production, il a été nécessaire de déployer
+            une nouvelle solution de stockage QNAP.
+          </p>
+
+          <p class="muted">
+            Cette mission m’a permis de participer à toutes les étapes
+            du projet : préparation du serveur, configuration réseau,
+            transport vers le datacenter puis mise en production.
+          </p>
+
+        </div>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+
+            <h3>Objectifs</h3>
+
+            <ul class="bullets">
+              <li>Déployer une nouvelle solution de stockage QNAP</li>
+              <li>Configurer le serveur avant mise en production</li>
+              <li>Installer physiquement le matériel au datacenter</li>
+              <li>Vérifier la connectivité et le bon fonctionnement</li>
+              <li>Documenter l’intervention technique</li>
+            </ul>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Environnement technique</h3>
+
+            <div class="chips">
+              <span class="chip">QNAP</span>
+              <span class="chip">QTS 5.2</span>
+              <span class="chip">Datacenter</span>
+              <span class="chip">HTTPS</span>
+              <span class="chip">Ethernet</span>
+              <span class="chip">Fibre</span>
+              <span class="chip">Stockage</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Travaux réalisés</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+
+            <h3>Préparation du QNAP</h3>
+
+            <p class="muted">
+              Participation à l’installation du système QTS
+              avec mon N+1 puis configuration réseau du serveur :
+              attribution de l’adresse IP et de la passerelle.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Déploiement physique</h3>
+
+            <p class="muted">
+              Déplacement au datacenter de Montigny-le-Bretonneux
+              afin d’installer physiquement les serveurs QNAP
+              dans les baies prévues.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Brassage et raccordement</h3>
+
+            <p class="muted">
+              Respect des normes de brassage et raccordement
+              des équipements sur le switch réseau afin
+              d’assurer leur intégration correcte.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Tests de validation</h3>
+
+            <p class="muted">
+              Vérification de la reconnaissance des disques,
+              tests de ping et contrôle des accès distants
+              après mise en service.
+            </p>
+
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Déploiement au datacenter</h2>
+
+        <div class="card" style="margin-top:14px">
+
+          <p class="muted">
+            Intervention réalisée au datacenter MLB de Montigny-le-Bretonneux
+            pour l’installation physique des serveurs de stockage QNAP
+            dans les baies réseau prévues. :contentReference[oaicite:0]{index=0}
+          </p>
+
+          <p class="muted">
+            Les serveurs ont été raccordés sur le switch réseau
+            bpe-03 via les ports 1/26 et 1/27. :contentReference[oaicite:1]{index=1}
+          </p>
+
+          <img
+            src="../images/qnap-rack.png"
+            alt="Installation des serveurs QNAP dans la baie réseau"
+            style="
+              width:100%;
+              max-width:1200px;
+              display:block;
+              margin:16px auto 0;
+              border-radius:14px;
+              border:1px solid rgba(255,255,255,.08);
+            "
+          />
+
+          <p class="muted" style="margin-top:10px">
+            Vue du positionnement des serveurs QNAP dans la baie réseau
+            et du raccordement au switch du datacenter.
+          </p>
+
+        </div>
+
+        <h2 style="margin-top:22px">Organisation du projet</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+
+            <h3>Étapes du déploiement</h3>
+
+            <ul class="bullets">
+              <li>Analyse du besoin de stockage</li>
+              <li>Préparation et configuration du QNAP</li>
+              <li>Transport du matériel au datacenter</li>
+              <li>Installation physique en baie</li>
+              <li>Raccordement réseau</li>
+              <li>Tests et validation du service</li>
+            </ul>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Intervenants</h3>
+
+            <p class="muted">
+              Cette intervention a été réalisée en collaboration
+              avec plusieurs techniciens et administrateurs
+              afin d’assurer la bonne mise en production
+              des équipements.
+            </p>
+
+            <div class="chips" style="margin-top:10px">
+              <span class="chip">Travail d’équipe</span>
+              <span class="chip">Datacenter</span>
+              <span class="chip">Maintenance IT</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Résultats obtenus</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+
+          <div class="card">
+
+            <h3>Impact pour l’entreprise</h3>
+
+            <ul class="bullets">
+              <li>Augmentation de la capacité de stockage</li>
+              <li>Infrastructure opérationnelle</li>
+              <li>Déploiement conforme aux normes internes</li>
+              <li>Serveurs accessibles à distance</li>
+            </ul>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Service rendu</h3>
+
+            <p class="muted">
+              Le déploiement du QNAP a permis de répondre
+              au besoin de stockage supplémentaire de la plateforme
+              tout en garantissant une intégration correcte
+              dans l’infrastructure existante.
+            </p>
+
+          </div>
+
+        </div>
+
+        <h2 style="margin-top:22px">Compétences mobilisées</h2>
+
+        <div class="card" style="margin-top:14px">
+
+          <ul class="bullets">
+            <li>Gestion des demandes</li>
+            <li>Mise à disposition d’un service informatique</li>
+            <li>Administration système et réseau</li>
+            <li>Déploiement en datacenter</li>
+            <li>Configuration réseau</li>
+            <li>Tests et validation d’infrastructure</li>
+          </ul>
+
+        </div>
+
+        <h2 style="margin-top:22px">Bilan personnel</h2>
+
+        <div class="card" style="margin-top:14px">
+
+          <p class="muted">
+            Cette mission m’a permis de participer au déploiement
+            complet d’un serveur de stockage, depuis sa préparation
+            jusqu’à sa mise en production en datacenter.
+          </p>
+
+          <p class="muted">
+            Il s’agissait également de ma première intervention
+            dans un datacenter, ce qui m’a permis de découvrir
+            les contraintes de sécurité, d’accès et les normes
+            de brassage appliquées en environnement professionnel.
+          </p>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script>
+
+    (function () {
+
+      var current = window.location.pathname.split('/').pop();
+
+      if (!current) current = 'index.html';
+
+      current = current.split('?')[0].split('#')[0];
+
+      var links = document.querySelectorAll('.nav a');
+
+      links.forEach(function (a) {
+
+        a.classList.remove('active');
+
+        var href = (a.getAttribute('href') || '')
+          .split('?')[0]
+          .split('#')[0];
+
+        var file = href.split('/').pop();
+
+        if (file === current) {
+          a.classList.add('active');
+        }
+
+      });
+
+    })();
+
+  </script>
+
+</body>
+</html>

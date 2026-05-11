@@ -3,14 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Certifications — Omar EL YAHIAOUI</title>
+
+  <title>Certifications — Dorian LACHASSE</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Certifications — Portfolio BTS SIO SISR">
+
+  <meta
+    name="description"
+    content="Certifications — Portfolio BTS SIO SISR"
+  />
+
+  <style>
+
+    .cert-image{
+      width:100%;
+      border-radius:12px;
+      margin-bottom:1rem;
+      border:1px solid #2c2c2c;
+      background:#111;
+    }
+
+  </style>
+
 </head>
+
 <body>
+
   <div class="wrapper">
 
     <aside class="sidebar">
+
       <div class="brand">
         <span>LACHASSE</span>
         <span class="sub">Dorian</span>
@@ -30,73 +52,159 @@
       </nav>
 
       <footer>© 2026 Dorian LACHASSE</footer>
+
     </aside>
 
     <main>
+
       <div class="container">
 
         <h1>Certifications</h1>
-        <div class="section-head"><span class="bar"></span></div>
 
-        <!-- Optionnel : petite intro -->
+        <div class="section-head">
+          <span class="bar"></span>
+        </div>
+
         <p class="lead" style="margin-top:.25rem">
-          Certifications et parcours d’apprentissage (cybersécurité, réseaux, Linux, web).
+          Certifications et parcours d’apprentissage
+          (cybersécurité, réseaux, Linux, web).
         </p>
 
-        <!-- Grille globale -->
         <div class="grid cols-2" style="margin-top:1rem">
 
-          <!-- ANSSI (à adapter : nom exact, date, niveau, lien) -->
+          <!-- ANSSI -->
           <div class="card">
-            <div class="badge" style="display:inline-flex; gap:.5rem; align-items:center; margin-bottom:.6rem">
-              <span>🛡️</span><b>ANSSI</b>
+
+            <img
+              src="images/ANSSI.png"
+              alt="Certification ANSSI"
+              class="cert-image"
+            />
+
+            <div
+              class="badge"
+              style="display:inline-flex; gap:.5rem; align-items:center; margin-bottom:.6rem"
+            >
+              <span>🛡️</span>
+              <b>ANSSI</b>
             </div>
-            <h3 style="margin-top:0">Certification / Attestation ANSSI</h3>
-            <div class="lead">Cybersécurité — sensibilisation / bonnes pratiques</div>
+
+            <h3 style="margin-top:0">
+              Certification / Attestation ANSSI
+            </h3>
+
+            <div class="lead">
+              Cybersécurité — sensibilisation / bonnes pratiques
+            </div>
+
             <p>
-              Validation des fondamentaux : hygiène informatique, mots de passe, phishing,
-              sauvegardes, bonnes pratiques de sécurité.
+              Validation des fondamentaux de la cybersécurité :
+              hygiène informatique, authentification,
+              sécurité Internet et sécurité du poste de travail.
             </p>
-            <!-- si tu as un lien vers ton badge/certif -->
-            <!-- <a class="btn" href="https://..." target="_blank" rel="noreferrer">Voir le justificatif</a> -->
-            <div class="progress" title="Obtenu"><span style="width:100%"></span></div>
+
+            <ul class="bullets">
+              <li>Panorama de la SSI</li>
+              <li>Sécurité de l’authentification</li>
+              <li>Sécurité sur Internet</li>
+              <li>Sécurité du poste de travail et nomadisme</li>
+            </ul>
+
+            <div
+              class="progress"
+              title="Obtenu"
+              style="margin-top:1rem"
+            >
+              <span style="width:100%"></span>
+            </div>
+
           </div>
 
-          <!-- TryHackMe (à adapter : niveau, rooms, profil) -->
+          <!-- TRYHACKME -->
           <div class="card">
-            <div class="badge" style="display:inline-flex; gap:.5rem; align-items:center; margin-bottom:.6rem">
-              <span>🎯</span><b>TryHackMe</b>
+
+            <img
+              src="images/Tryhackme.png"
+              alt="Certification TryHackMe"
+              class="cert-image"
+            />
+
+            <div
+              class="badge"
+              style="display:inline-flex; gap:.5rem; align-items:center; margin-bottom:.6rem"
+            >
+              <span>🎯</span>
+              <b>TryHackMe</b>
             </div>
-            <h3 style="margin-top:0">Parcours cybersécurité</h3>
-            <div class="lead">Labs / Rooms — pratique offensive & défensive</div>
+
+            <h3 style="margin-top:0">
+              Parcours cybersécurité
+            </h3>
+
+            <div class="lead">
+              Labs / Rooms — pratique offensive & défensive
+            </div>
+
             <p>
-              Exercices pratiques : reconnaissance, bases Linux, réseau, web, sécurité,
-              méthodologie et résolution guidée de challenges.
+              Parcours d’apprentissage cybersécurité orienté pratique
+              avec des laboratoires interactifs :
+              Linux, réseau, sécurité web et méthodologie d’analyse.
             </p>
-            <!-- <a class="btn" href="https://tryhackme.com/p/TONPSEUDO" target="_blank" rel="noreferrer">Voir mon profil</a> -->
-            <div class="progress" title="En progression"><span style="width:70%"></span></div>
+
+            <ul class="bullets">
+              <li>Découverte Linux</li>
+              <li>Introduction réseau</li>
+              <li>Initiation cybersécurité</li>
+              <li>Analyse et résolution de challenges</li>
+            </ul>
+
+            <div
+              class="progress"
+              title="Complété"
+              style="margin-top:1rem"
+            >
+              <span style="width:100%"></span>
+            </div>
+
           </div>
 
-          
         </div>
+
       </div>
+
     </main>
+
   </div>
 
   <script>
+
   (function(){
+
     var current = window.location.pathname.split('/').pop();
+
     if (!current) current = 'index.html';
+
     current = current.split('?')[0].split('#')[0];
 
     var links = document.querySelectorAll('.nav a');
+
     links.forEach(function(a){
+
       a.classList.remove('active');
-      var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+
+      var href = (a.getAttribute('href') || '')
+        .split('?')[0]
+        .split('#')[0];
+
       var file = href.split('/').pop();
+
       if (file === current) a.classList.add('active');
+
     });
+
   })();
+
   </script>
+
 </body>
 </html>

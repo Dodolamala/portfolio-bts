@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plan de sauvegarde — Projet Foudroyeur</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <meta name="description" content="Plan de sauvegarde d’un site e-commerce fictif — Projet Foudroyeur">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span>LACHASSE</span>
+        <span class="sub">Dorian</span>
+        <small>Étudiant BTS SIO</small>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">🏠</span><span>Profil</span></a>
+        <a href="../bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+        <a href="../parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+        <a href="../stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+        <a href="../realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+        <a href="../epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+        <a href="../veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+        <a href="../certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+        <a href="../contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+      </nav>
+
+      <footer>© 2026 Dorian LACHASSE</footer>
+    </aside>
+
+    <main>
+      <div class="container">
+
+        <a class="backlink" href="../competences/gerer-le-patrimoine-informatique.html">
+          ← Retour à la gestion du patrimoine informatique
+        </a>
+
+        <h1>Plan de sauvegarde d’un site e-commerce — Projet Foudroyeur</h1>
+        <div class="section-head"><span class="bar"></span></div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Contexte</h3>
+          <p class="muted">
+            Le Projet Foudroyeur est un site e-commerce fictif spécialisé dans la vente
+            de matériel électronique et high-tech. Dans ce cadre, j’ai travaillé sur
+            l’élaboration d’un plan de sauvegarde permettant de protéger les données
+            critiques du site, d’assurer la continuité d’activité et de faciliter
+            la reprise après incident.
+          </p>
+        </div>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Objectifs</h3>
+            <ul class="bullets">
+              <li>Protéger les données critiques du site e-commerce</li>
+              <li>Limiter les pertes de données en cas d’incident</li>
+              <li>Garantir une reprise rapide du service</li>
+              <li>Prévenir les risques liés aux pannes et erreurs humaines</li>
+              <li>Renforcer la résilience face aux cyberattaques</li>
+              <li>Documenter la stratégie de sauvegarde et de restauration</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Environnement technique</h3>
+            <div class="chips">
+              <span class="chip">Sauvegarde</span>
+              <span class="chip">E-commerce</span>
+              <span class="chip">RPO</span>
+              <span class="chip">RTO</span>
+              <span class="chip">3-2-1</span>
+              <span class="chip">AES-256</span>
+              <span class="chip">PRA</span>
+              <span class="chip">Sécurité</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Périmètre des sauvegardes</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Base de données clients</li>
+            <li>Commandes et paiements</li>
+            <li>Catalogue produits</li>
+            <li>Serveurs applicatifs</li>
+            <li>Fichiers médias</li>
+            <li>Logs système</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Politique de sauvegarde</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Fréquence</h3>
+            <ul class="bullets">
+              <li>Sauvegarde complète chaque dimanche</li>
+              <li>Sauvegarde incrémentielle toutes les 6 heures</li>
+              <li>Sauvegarde différentielle quotidienne</li>
+              <li>Snapshots serveurs toutes les 12 heures</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Rétention</h3>
+            <ul class="bullets">
+              <li>Sauvegardes quotidiennes : 30 jours</li>
+              <li>Sauvegardes hebdomadaires : 3 mois</li>
+              <li>Sauvegardes mensuelles : 1 an</li>
+              <li>Archives annuelles : 5 ans</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Sécurité des sauvegardes</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Application de la règle 3-2-1 : 3 copies, 2 supports, 1 copie hors site</li>
+            <li>Chiffrement des sauvegardes en AES-256</li>
+            <li>Authentification multifacteur</li>
+            <li>Contrôle d’accès administrateur</li>
+            <li>Protection anti-ransomware</li>
+            <li>Vérification automatique de l’intégrité des sauvegardes</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Procédure de restauration</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Identification de l’incident</li>
+            <li>Sélection du point de restauration</li>
+            <li>Restauration des données</li>
+            <li>Réalisation de tests fonctionnels</li>
+            <li>Remise en production du service</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Objectifs de reprise</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>RPO</h3>
+            <p class="muted">
+              Le RPO défini est de 6 heures maximum de perte de données.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>RTO</h3>
+            <p class="muted">
+              Le RTO défini est de 2 heures maximum pour la reprise du service.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Documentation associée</h2>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Plan de sauvegarde — Projet Foudroyeur</h3>
+          <p class="muted">
+            Le document PDF présente les objectifs, le périmètre, la politique
+            de sauvegarde, la rétention, la sécurité, la procédure de restauration
+            ainsi que les objectifs de reprise du projet.
+          </p>
+
+          <a
+            class="btn"
+            href="../documents/Plan_Sauvegarde_Projet_Foudroyeur.pdf"
+            target="_blank"
+          >
+            📄 Consulter le PDF
+          </a>
+        </div>
+
+        <h2 style="margin-top:22px">Compétences mobilisées</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Gérer le patrimoine informatique</li>
+            <li>Gérer des sauvegardes</li>
+            <li>Vérifier les conditions de continuité d’un service</li>
+            <li>Identifier les ressources critiques</li>
+            <li>Appliquer des bonnes pratiques de sécurité</li>
+            <li>Documenter une procédure technique</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Bilan personnel</h2>
+
+        <div class="card" style="margin-top:14px">
+          <p class="muted">
+            Cette réalisation m’a permis de mieux comprendre l’importance
+            d’un plan de sauvegarde dans la gestion d’un service informatique.
+            J’ai appris à identifier les données sensibles, à définir une fréquence
+            de sauvegarde adaptée et à préparer une procédure de restauration
+            cohérente avec les objectifs de reprise.
+          </p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var current = window.location.pathname.split('/').pop();
+      if (!current) current = 'index.html';
+      current = current.split('?')[0].split('#')[0];
+
+      var links = document.querySelectorAll('.nav a');
+      links.forEach(function (a) {
+        a.classList.remove('active');
+        var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+        var file = href.split('/').pop();
+        if (file === current) a.classList.add('active');
+      });
+    })();
+  </script>
+
+</body>
+</html>

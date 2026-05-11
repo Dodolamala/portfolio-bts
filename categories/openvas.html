@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Déploiement du service OpenVAS — Dorian LACHASSE</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <meta name="description" content="Déploiement et exploitation OpenVAS — Portfolio BTS SIO SISR">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span>LACHASSE</span>
+        <span class="sub">Dorian</span>
+        <small>Étudiant BTS SIO</small>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html"><span class="icon">🏠</span><span>Profil</span></a>
+        <a href="../bts-sio.html"><span class="icon">🏫</span><span>BTS SIO</span></a>
+        <a href="../parcours.html"><span class="icon">🎓</span><span>Parcours</span></a>
+        <a href="../stages.html"><span class="icon">🧳</span><span>Alternance</span></a>
+        <a href="../realisations.html"><span class="icon">📋</span><span>Épreuve E5</span></a>
+        <a href="../epreuves.html"><span class="icon">📘</span><span>Épreuve E6</span></a>
+        <a href="../veille.html"><span class="icon">👁️</span><span>Veille</span></a>
+        <a href="../certifications.html"><span class="icon">🎖️</span><span>Certifications</span></a>
+        <a href="../contact.html"><span class="icon">✉️</span><span>Contact</span></a>
+      </nav>
+
+      <footer>© 2026 Dorian LACHASSE</footer>
+    </aside>
+
+    <main>
+      <div class="container">
+
+        <a class="backlink" href="../competences/mise-a-disposition-services.html">
+          ← Retour à la mise à disposition de services
+        </a>
+
+        <h1>Déploiement du service OpenVAS</h1>
+        <div class="section-head"><span class="bar"></span></div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Contexte</h3>
+          <p class="muted">
+            À la suite de l’audit NIS2, l’entreprise souhaitait renforcer
+            la sécurité de son infrastructure en identifiant les vulnérabilités
+            présentes sur les systèmes et services.
+          </p>
+          <p class="muted">
+            OpenVAS a été retenu comme solution open-source afin de réaliser
+            des scans de vulnérabilités sur différentes plateformes de production.
+          </p>
+        </div>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Objectifs</h3>
+            <ul class="bullets">
+              <li>Déployer OpenVAS sur une machine virtuelle</li>
+              <li>Définir les zones de scan par plateforme</li>
+              <li>Créer des groupes d’IP avec phpIPAM</li>
+              <li>Configurer les cibles et les tâches de scan</li>
+              <li>Lancer les scans et récupérer les rapports</li>
+              <li>Stocker les résultats dans la documentation interne</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Environnement technique</h3>
+            <div class="chips">
+              <span class="chip">OpenVAS</span>
+              <span class="chip">Greenbone</span>
+              <span class="chip">VM</span>
+              <span class="chip">OVA</span>
+              <span class="chip">HTTPS</span>
+              <span class="chip">phpIPAM</span>
+              <span class="chip">Cybersécurité</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Travaux réalisés</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Déploiement du service</h3>
+            <p class="muted">
+              Déploiement de l’OVA OpenVAS sur une machine virtuelle afin
+              de mettre à disposition un service de scan de vulnérabilités.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Définition du périmètre</h3>
+            <p class="muted">
+              Découpage des scans par plateformes de production afin
+              d’organiser les analyses et de limiter l’impact sur l’infrastructure.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Configuration des scans</h3>
+            <p class="muted">
+              Création des targets, définition des groupes d’IP,
+              paramétrage des tasks et choix des configurations de scan.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Exploitation des résultats</h3>
+            <p class="muted">
+              Lancement des scans, récupération des rapports PDF
+              et stockage des comptes rendus dans la documentation interne.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Documents associés</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Procédure de lancement d’un scan</h3>
+            <p class="muted">
+              Procédure détaillant la création d’une target, la création
+              d’une task, le lancement d’un scan OpenVAS et la récupération
+              du rapport.
+            </p>
+
+            <div style="margin-top:1rem">
+              <a
+                class="btn"
+                href="../documents/IIC-PRJ - Lancement d'un scan (WIP)-040526-115011.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                📄 Voir la procédure PDF
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Documentation OpenVAS</h3>
+            <p class="muted">
+              Document expliquant le rôle d’OpenVAS, son architecture,
+              les composants Greenbone, les NVTs, les rapports et la logique
+              de gestion des vulnérabilités.
+            </p>
+
+            <div style="margin-top:1rem">
+              <a
+                class="btn"
+                href="../documents/OpenVAS.docx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                📄 Voir le document Word
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Exemple de rapport OpenVAS</h2>
+
+        <div class="card" style="margin-top:14px">
+          <p class="muted">
+            Exemple de rapport généré après un scan OpenVAS.
+            Le rapport présente les résultats par hôte, les ports concernés,
+            le niveau de menace et le détail des vulnérabilités détectées.
+          </p>
+
+          <img
+            src="../images/RAPPORTVAS.png"
+            alt="Exemple de rapport OpenVAS"
+            style="
+              width:100%;
+              max-width:1200px;
+              display:block;
+              margin:16px auto 0;
+              border-radius:14px;
+              border:1px solid rgba(255,255,255,.08);
+            "
+          />
+        </div>
+
+        <h2 style="margin-top:22px">Étapes d’exploitation</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>1. Création d’une target</h3>
+            <p class="muted">
+              Connexion à l’interface Greenbone, accès à la section Target
+              puis création d’une cible contenant les hôtes ou sous-réseaux à scanner.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>2. Création d’une task</h3>
+            <p class="muted">
+              Création d’une tâche associée à la target, avec configuration
+              du scanner, du type de scan et des paramètres souhaités.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>3. Lancement du scan</h3>
+            <p class="muted">
+              Démarrage de la tâche depuis l’interface OpenVAS,
+              puis suivi de son état jusqu’à la fin de l’analyse.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>4. Export du rapport</h3>
+            <p class="muted">
+              Une fois le scan terminé, consultation des résultats
+              puis téléchargement du rapport au format PDF.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Points de vigilance</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Bien définir le périmètre de scan avant le lancement</li>
+            <li>Ouvrir puis refermer les règles firewall nécessaires</li>
+            <li>Planifier les scans pour limiter l’impact en production</li>
+            <li>Classer les rapports pour assurer un suivi dans le temps</li>
+            <li>Prioriser les vulnérabilités selon leur criticité</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Résultats obtenus</h2>
+
+        <div class="grid cols-2" style="margin-top:14px">
+          <div class="card">
+            <h3>Service opérationnel</h3>
+            <ul class="bullets">
+              <li>OpenVAS déployé sur VM</li>
+              <li>Scans organisés par plateforme</li>
+              <li>Rapports exploitables générés</li>
+              <li>Service utilisé de manière périodique</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Impact pour l’entreprise</h3>
+            <p class="muted">
+              Le service permet d’identifier les failles présentes
+              dans l’infrastructure afin de prioriser les corrections
+              et d’améliorer progressivement le niveau de sécurité.
+            </p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:22px">Compétences mobilisées</h2>
+
+        <div class="card" style="margin-top:14px">
+          <ul class="bullets">
+            <li>Mise à disposition d’un service informatique</li>
+            <li>Administration système et réseau</li>
+            <li>Sécurisation de l’infrastructure</li>
+            <li>Déploiement d’une OVA sur VM</li>
+            <li>Configuration d’un outil de scan</li>
+            <li>Analyse et documentation des résultats</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:22px">Bilan personnel</h2>
+
+        <div class="card" style="margin-top:14px">
+          <p class="muted">
+            Cette mission m’a permis de découvrir le déploiement
+            d’une appliance virtuelle et l’utilisation d’OpenVAS
+            pour analyser les vulnérabilités d’une infrastructure.
+          </p>
+          <p class="muted">
+            J’ai également appris à organiser les scans par périmètre,
+            à générer des rapports et à documenter une procédure
+            d’exploitation claire pour l’équipe.
+          </p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var current = window.location.pathname.split('/').pop();
+      if (!current) current = 'index.html';
+      current = current.split('?')[0].split('#')[0];
+
+      var links = document.querySelectorAll('.nav a');
+      links.forEach(function (a) {
+        a.classList.remove('active');
+        var href = (a.getAttribute('href') || '').split('?')[0].split('#')[0];
+        var file = href.split('/').pop();
+        if (file === current) a.classList.add('active');
+      });
+    })();
+  </script>
+
+</body>
+</html>
